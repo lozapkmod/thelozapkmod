@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>lozapkmod</title>
+</head>
+<body>
+    <nav>
+        <i class="fa fa-th-list" id="box"></i>
+            <a href="/" class="Logo" id="Logo"><button class="logo-button">lozapkmod</button></a>        
+            <div class="navbarlinks" id="navbarLinks">
+            <ul id="navLinks">
+                <li><a href="/"><button class="navbuttonlink">Home</button></a></li>
+                <li><a href="#"><button class="navbuttonlink">Contact</button></a></li>
+                <li><a href="#"><button class="navbuttonlink">About</button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <div class="search-bar" id="search-bar">
+        <input type="text" id="app-search" placeholder="Search for mods...">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div class="category">
+        <h1>
+            Modded Games
+        </h1>
+        <i class="fa fa-gamepad" style="font-size:36px" id="gamepad-logo"></i>
+    </div>
+
+    <div class="app-container">
+        <a href="monopolygo.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/monopolygologo.png" class="image-logo"><h1 class="applogo-text">Monopoly GO! Dice Mod</h1></button>
+        </div>
+        </a>
+
+        <a href="pool.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/pool.png" class="image-logo"><h1 class="applogo-text">8 ball pool cheto</h1></button>
+        </div>
+        </a>
+
+        <a href="shadowfight4.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/shadowfight4.png" class="image-logo"><h1 class="applogo-text">Shadow fight 4 mod</h1></button>
+        </div>
+        </a>
+
+        <a href="dblegends.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/dblegends.png" class="image-logo"><h1 class="applogo-text">db legends crystals mod</h1></button>
+        </div>
+        </a>
+
+        <a href="rr3.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/rr3.png" class="image-logo"><h1 class="applogo-text">Real racing 3 mod</h1></button>
+        </div>
+        </a>
+    </div>
+    
+    <div class="category">
+        <h1>
+            VIP Games
+        </h1>
+        <i class="fa fa-gamepad" style="font-size:36px" id="gamepad-logo"></i><i class="fa fa-star" style="font-size:36px"></i>
+    </div>
+
+    <div class="app-container">
+        <a href="gta5mobile.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/gta5.png" class="image-logo"><h1 class="applogo-text">GTA V Mobile</h1></button>
+        </div>
+        </a>
+
+        <a href="narutomobile.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/narutomobile.png" class="image-logo"><h1 class="applogo-text">Ninja Storm 4 mobile</h1></button>
+        </div>
+        </a>
+        <a href="spidermanmobile.html" class="logo-box">
+            <div class="square-button">
+            <button class="app-button"><img src="images/spidermanmobile.jpg" class="image-logo"><h1 class="applogo-text">Spider-man mobile</h1></button>
+        </div>
+        </a>
+
+
+
+
+
+
+
+        </div>
+
+
+  
+    
+
+    
+   
+   
+    
+    <div class="footerr">
+    <footer>
+        &copy; lozapkmod
+    </footer>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const box = document.getElementById("box");
+    const navLinks = document.getElementById("navbarLinks");
+    box.addEventListener("click", function () {
+        navbarLinks.classList.toggle("active");        
+        });
+});
+</script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        
+        const searchInput = document.getElementById("app-search");
+        const searchButton = document.getElementById("search-button");
+
+        
+        const appReviews = document.querySelectorAll(".logo-box");
+
+        
+        const divsToHide = document.querySelectorAll(".category");
+
+        
+        searchButton.addEventListener("click", function () {
+            const searchText = searchInput.value.toLowerCase();
+
+            
+            appReviews.forEach(function (appReview) {
+                const reviewText = appReview.textContent.toLowerCase();
+
+                
+                const isMatch = reviewText.includes(searchText);
+
+                
+                appReview.style.display = isMatch ? "block" : "none";
+            });
+
+            
+            divsToHide.forEach(function (div) {
+                div.style.display = "none";
+            });
+        });
+        searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                
+                event.preventDefault();
+
+                
+                searchButton.click();
+            }
+        });
+    });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,282 @@
+*{
+    text-decoration: none;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: wheat;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background-color: rgb(207, 102, 49);
+    color: #fff;
+    text-align: center;
+}
+.footerr{
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: rgb(207, 102, 49);
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+.navbarlinks ul{
+    display: flex;
+    margin-right: 15px;
+    list-style: none;
+    height: 70px;
+    align-items: center;
+    padding-left: 0%;
+    margin-right: 0%;
+}
+.navbarlinks ul li{
+    display: flex;
+    align-items: center ;
+    height: 70px;
+}
+
+.navbarlinks ul li a{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    margin: 15px;
+    
+}
+.Logo{
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: white;
+    
+}
+.Logo:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.navbuttonlink{
+    border: none;
+    color: white;
+    background-color: rgb(207, 102, 49);
+    border-radius: 10px;
+    font-size: larger;
+    
+}
+.navbuttonlink:hover{
+    background-color: rgb(238, 183, 156);
+color: white;
+transition: 0.25s;
+}
+.logo-button{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(207, 102, 49);
+    border-radius: 10px;
+}
+.logo-button:hover{
+    background-color: wheat;
+color: white;
+transition: 0.25s;
+
+
+}
+#box{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    display: none;
+}
+
+
+@media screen and (max-width:520px) {
+
+  
+   
+    #box{
+        display: inline;
+        margin: 15px;
+    }
+    .navbarlinks ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25%;
+        align-items: center;
+        height: auto;
+    }
+    
+    .navbarlinks{
+        position: fixed;
+        background-color: rgb(218, 146, 111);
+        width: 100vw;
+        height: 100vh; 
+        top: 70px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: -100%;
+        transition: all 1s;
+    }
+    .navbarlinks.active{
+        margin-left: 0;
+    }
+    .navbarlinks ul li{
+        margin-bottom: 40%;
+    }
+    .navbarLinks:active{
+        margin-left: 0%;
+        top: 70px;
+    }
+    .navbuttonlink{
+        background-color: rgb(218, 146, 111);
+        border-radius: 0%;
+        border-radius: 10px;
+    }
+
+    .logo-button:hover{
+        transition: 0s;
+    }
+    .navbuttonlink:hover{
+        transition: 0s;
+    }
+    
+
+
+}
+.search-bar{
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;    
+}
+#app-search{
+width: 70%;
+height:30px;
+}
+main {
+    padding: 20px;
+}
+
+
+
+.logo-name{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+
+}
+.download-link{
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+.logo-img{
+    height: 60px;
+    width: auto;
+}
+#app-search{
+    border: none;
+    background-color: #fff;
+}
+#search-button{
+    border: none;
+    background-color: #fff;
+    height: 32px;
+}
+.app-container{
+    padding: 10px;
+    padding-left: 0;
+    margin-top: 1vh;
+    display: flex;
+    margin-left: 1vw;
+    overflow-x: scroll;
+    background: none;
+
+}
+.app-button{
+    height: 180px;
+    width: 150px;
+    background-color: rgb(238, 168, 121);
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.square-button{
+    width: 150px;
+}
+
+.image-logo{
+    height: 100px;
+    width: auto;
+}
+.logo-box{
+    margin: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.app-button:hover{
+    background-color: wheat;
+    border: none;
+    color: black;
+    transition: 0.01s;
+    
+}
+
+.category{
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    padding-left: 5vw;
+    background-color: rgb(207, 102, 49);
+    width: 100%;
+    color: wheat;
+}
+#gamepad-logo{
+    margin-left: 15px;
+}
+.applogo-text{
+    font-size: 15px;
+}
+
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+      }
+      
+      
+      ::-webkit-scrollbar-track {
+        background-color: wheat;
+      }
+      
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(207, 102, 49);
+      }
+      
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(131, 65, 32);
+      }
+    
