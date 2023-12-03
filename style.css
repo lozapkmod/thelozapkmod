@@ -249,7 +249,7 @@ main {
     margin-bottom: 0;
     padding-left: 5vw;
     background-color: rgb(207, 102, 49);
-    width: 100%;
+    width: auto;
     color: wheat;
 }
 #gamepad-logo{
