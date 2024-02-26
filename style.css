@@ -23,138 +23,114 @@ footer {
     margin-bottom: 0;
     padding: 0;
 }
-nav{
+.navbar{
+    width: 100vw;
+    height: max(6vh,60px);
+    display: grid;
+    background-color: rgb(251, 133, 55);
     position: fixed;
+    z-index: 9999;
     top: 0;
-    background-color: rgb(207, 102, 49);
-    width: 100%;
-    height: 70px;
+}
+#navLogo{
+    display: flex;
+    background: none;
+    border: none;
+    margin-left: 5%;
+    color: white;
+    font-size: min(2rem,5vw);
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin-left: 1vw;
+}
+.navbuttons{
+    display: flex;
+    grid-column: 6;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    
-}
-.navbarlinks ul{
-    display: flex;
-    margin-right: 15px;
-    list-style: none;
-    height: 70px;
-    align-items: center;
-    padding-left: 0%;
-    margin-right: 0%;
-}
-.navbarlinks ul li{
-    display: flex;
-    align-items: center ;
-    height: 70px;
-}
 
-.navbarlinks ul li a{
-    padding: 10px;
-    font-size: 25px;
-    color: white;
-    margin: 15px;
-    
 }
-.Logo{
-    margin: 10px;
-    margin-left: 30px;
-    font-size: 50px;
-    color: white;
-    
-}
-.Logo:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-}
-.navbuttonlink{
+#home,#contact,#about{
+    background: none;
     border: none;
     color: white;
-    background-color: rgb(207, 102, 49);
-    border-radius: 10px;
-    font-size: larger;
-    
+    font-size: 2em;
+    border-radius: 15px;
+    transition: 0.5s;
 }
-.navbuttonlink:hover{
-    background-color: rgb(238, 183, 156);
-color: white;
-transition: 0.25s;
+#home:hover{
+    background-color: white;
+    color: black;
 }
-.logo-button{
-    display: flex;
-    align-items: center;
-    font-size: 40px;
-    border: none;
-    color: white;
-    background-color: rgb(207, 102, 49);
-    border-radius: 10px;
+#contact:hover{
+    background-color: white;
+    color: black;
 }
-.logo-button:hover{
-    background-color: wheat;
-color: white;
-transition: 0.25s;
-
-
+#about:hover{
+    background-color: white;
+    color: black;
+}
+#navLogo:hover{
+    background-color: white;
+    color: black;
+    scale: 110%;
 }
 #box{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
     display: none;
+    font-size: 2em;
 }
 
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:450px) {
 
   
    
     #box{
-        display: inline;
-        margin: 15px;
+        display: flex;
     }
-    .navbarlinks ul{
+    .navbar{
         display: flex;
         flex-direction: column;
-        padding-bottom: 25%;
-        align-items: center;
-        height: auto;
-    }
-    
-    .navbarlinks{
-        position: fixed;
-        background-color: rgb(218, 146, 111);
-        width: 100vw;
-        height: 100vh; 
-        top: 70px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin-left: -100%;
-        transition: all 1s;
-    }
-    .navbarlinks.active{
-        margin-left: 0;
-    }
-    .navbarlinks ul li{
-        margin-bottom: 40%;
-    }
-    .navbarLinks:active{
-        margin-left: 0%;
-        top: 70px;
-    }
-    .navbuttonlink{
-        background-color: rgb(218, 146, 111);
-        border-radius: 0%;
-        border-radius: 10px;
+        justify-items: center;
+        height: 8vh;
     }
 
-    .logo-button:hover{
-        transition: 0s;
+    .navbuttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: -300000000000vh;
+        gap: 10vh;
+        margin-left: 10vw;
+        width: 80%;
     }
-    .navbuttonlink:hover{
-        transition: 0s;
+    .logo{
+        width: 100vw;
+        height: 8vh;
+        justify-content: space-between;
+        
+        
+    }
+    #navLogo{
+        font-size: 1.5rem;
+    }
+    #navLogo:hover{
+        scale: 105%;
+    }
+    .active1{
+        margin-top: 30vh;
+    }
+    .active2{
+        height: 100vh;
+    }
+    #box{
+        margin-right: 5%;
+        color: white;
     }
     
 
