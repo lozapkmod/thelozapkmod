@@ -22,7 +22,7 @@
         
         
         <div class="navbuttons" id="navbuttonss">
-            <a href="#"><button id="home">Home</button></a>
+            <a href="/"><button id="home">Home</button></a>
             <a href="#"><button id="contact">Contact</button></a>
             <a href="#"><button id="about">About</button></a>
         </div>
@@ -77,13 +77,14 @@
 </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const box = document.getElementById("box");
-        const navLinks = document.getElementById("navbarLinks");
-        box.addEventListener("click", function () {
-            navbarLinks.classList.toggle("active");        
-            });
-    });
+        var navButtons = document.querySelector('.navbuttons')
+        const navBar = document.querySelector('.navbar')
+        const box = document.querySelector('#box')
+        box.addEventListener('click',function(){
+            navButtons.classList.toggle('active1')
+            navBar.classList.toggle('active2')
+        })
+        
     </script>
     
     
